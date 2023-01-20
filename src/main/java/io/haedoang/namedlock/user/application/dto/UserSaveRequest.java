@@ -1,6 +1,6 @@
-package io.haedoang.namedlock.event.application.dto;
+package io.haedoang.namedlock.user.application.dto;
 
-import io.haedoang.namedlock.event.domain.User;
+import io.haedoang.namedlock.user.domain.User;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

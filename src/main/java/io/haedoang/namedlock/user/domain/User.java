@@ -1,4 +1,4 @@
-package io.haedoang.namedlock.event.domain;
+package io.haedoang.namedlock.user.domain;
 
 import io.haedoang.namedlock.base.domain.BaseEntity;
 import lombok.Getter;

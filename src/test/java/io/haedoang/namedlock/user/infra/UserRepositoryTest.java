@@ -1,6 +1,6 @@
-package io.haedoang.namedlock.event.infra;
+package io.haedoang.namedlock.user.infra;
 
-import io.haedoang.namedlock.event.domain.User;
+import io.haedoang.namedlock.user.domain.User;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,5 @@
 import http from 'k6/http';
 import { check } from 'k6';
-import { randomString } from 'https://jslib.k6.io/k6-utils/1.2.0/index.js';
-
 
 const HOST = {
     PROTOCOL : "http",
@@ -18,7 +16,7 @@ export let options = {
     },
 };
 
-const API = `${HOST.PROTOCOL}://${HOST.URL}:${HOST.PORT}/api/v1/events`;
+const API = `${HOST.PROTOCOL}://${HOST.URL}:${HOST.PORT}/api/v1/users`;
 const data = {
     'nickname' : '해도앙'
 }

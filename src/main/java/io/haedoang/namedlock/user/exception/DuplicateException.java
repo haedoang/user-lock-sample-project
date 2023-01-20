@@ -1,4 +1,4 @@
-package io.haedoang.namedlock.event.exception;
+package io.haedoang.namedlock.user.exception;
 
 import org.springframework.web.bind.annotation.ResponseStatus;
 

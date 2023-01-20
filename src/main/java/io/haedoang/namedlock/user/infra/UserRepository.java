@@ -1,6 +1,6 @@
-package io.haedoang.namedlock.event.infra;
+package io.haedoang.namedlock.user.infra;
 
-import io.haedoang.namedlock.event.domain.User;
+import io.haedoang.namedlock.user.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

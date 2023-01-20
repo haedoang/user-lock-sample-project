@@ -1,9 +1,9 @@
-package io.haedoang.namedlock.event.application;
+package io.haedoang.namedlock.user.application;
 
-import io.haedoang.namedlock.event.application.dto.UserSaveRequest;
-import io.haedoang.namedlock.event.domain.User;
-import io.haedoang.namedlock.event.exception.DuplicateException;
-import io.haedoang.namedlock.event.infra.UserRepository;
+import io.haedoang.namedlock.user.application.dto.UserSaveRequest;
+import io.haedoang.namedlock.user.domain.User;
+import io.haedoang.namedlock.user.exception.DuplicateException;
+import io.haedoang.namedlock.user.infra.UserRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
