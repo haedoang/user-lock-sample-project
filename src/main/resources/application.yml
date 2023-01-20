@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: user-api
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:mysql://localhost:33061/test
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: qlalfqjsgh486

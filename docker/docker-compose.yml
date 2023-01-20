@@ -1,0 +1,24 @@
+version: "2.4"
+services:
+  mysql57:
+    container_name: mysql57
+    image: mysql:5.7.40
+    platform: linux/amd64
+    environment:
+      MYSQL_DATABASE: 'test'
+      MYSQL_ROOT_PASSWORD: 'qlalfqjsgh486'
+    volumes:
+      - ~/db/docker/mysqldata2:/var/lib/mysql
+    ports:
+      - "33061:3306"
+    networks:
+      - mysql57
+    restart: unless-stopped
+
+networks:
+  mysql57:
+    driver: bridge
+
+volumes:
+  mysql57:
+
