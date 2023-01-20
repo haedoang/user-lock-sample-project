@@ -1,5 +1,7 @@
 import http from 'k6/http';
 import { check } from 'k6';
+import { randomString } from 'https://jslib.k6.io/k6-utils/1.2.0/index.js';
+
 
 const HOST = {
     PROTOCOL : "http",
@@ -18,7 +20,7 @@ export let options = {
 
 const API = `${HOST.PROTOCOL}://${HOST.URL}:${HOST.PORT}/api/v1/events`;
 const data = {
-    'nickname' : '랄랄라4'
+    'nickname' : '해도앙'
 }
 
 export default function () {
@@ -26,8 +28,8 @@ export default function () {
     let response = http.post(API, JSON.stringify(data), { headers : { 'Content-Type' : 'application/json'}});
 
     check(response, {
-        'response successfully': (response) => response.status === 201,
-        'debounce' : (response) => response.status === 400,
-        'forbidden' : (response) => response.status === 403
+        'created': (response) => response.status === 201,
+        'debounce' : (response) => response.status === 403,
+        'duplicate' : (response) => response.status === 400
     });
 };
